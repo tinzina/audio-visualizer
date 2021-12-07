@@ -6,8 +6,6 @@ const fileBrowserButtonID = "fileBrowser";
 const fileDialog = new FileDialog(fileBrowserButtonID, changeAudioFile);
 
 function changeAudioFile(fileInformation) {
-    console.log(`fileInformation`, fileInformation)
-    console.log(fileInformation.path)
     player.src = fileInformation.path;
 }
 
