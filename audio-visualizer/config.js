@@ -1,4 +1,4 @@
-const debugMode = true;
+const debugMode = !window.location.startsWith(`https://ia.dev-scripts.com/taskpane`);
 export default {
     debugMode: debugMode,
     COURSEZIP: debugMode ? 'http://localhost/audio-visualizer/audio-visualizer/filedialog/php/coursezip.php' : 'https://dev-scripts.com/ia/taskpane/lessons-bin/audio-visualizer/filedialog/php/coursezip.php',
