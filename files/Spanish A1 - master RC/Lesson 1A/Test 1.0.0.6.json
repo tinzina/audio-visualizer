@@ -1,0 +1,441 @@
+{
+  "name": "Test",
+  "course": "Spanish A1 - master RC.xlsx",
+  "duration": 36.734541666666665,
+  "fileName": "Test",
+  "lastUpdated": 44531.8204420486,
+  "lesson": "Lesson 1A",
+  "timestampAddress": "'Lesson 1A'!C46",
+  "title": "Test",
+  "transition": "Slide Right",
+  "type": "Exercise",
+  "version": "1.0.0.6",
+  "bubbles": [
+    {
+      "category": "Q&A",
+      "duration": 36.40891666666667,
+      "endTime": 36.45891666666667,
+      "startTime": 0.05,
+      "type": "Bubble",
+      "transition": "Slide Up",
+      "speech": [
+        {
+          "duration": 2.0983333333333336,
+          "endTime": 2.1483333333333334,
+          "startTime": 0.05,
+          "id": "'Lesson 1A'!D48",
+          "prosodyRate": 1,
+          "text": "Here is how to say: excuse me",
+          "voice": "en-US-MichelleNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 500000,
+              "index": 0,
+              "duration": 0.2375,
+              "endTime": 0.2875,
+              "startTime": 0.05,
+              "text": "Here",
+              "textOffset": 117
+            },
+            {
+              "audioOffset": 2875000,
+              "index": 1,
+              "duration": 0.125,
+              "endTime": 0.4125,
+              "startTime": 0.2875,
+              "text": "is",
+              "textOffset": 122
+            },
+            {
+              "audioOffset": 4125000,
+              "index": 2,
+              "duration": 0.15000000000000002,
+              "endTime": 0.5625,
+              "startTime": 0.4125,
+              "text": "how",
+              "textOffset": 125
+            },
+            {
+              "audioOffset": 5625000,
+              "index": 3,
+              "duration": 0.09999999999999998,
+              "endTime": 0.6625,
+              "startTime": 0.5625,
+              "text": "to",
+              "textOffset": 129
+            },
+            {
+              "audioOffset": 6625000,
+              "index": 4,
+              "duration": 0.65,
+              "endTime": 1.3125,
+              "startTime": 0.6625,
+              "text": "say",
+              "textOffset": 132
+            },
+            {
+              "audioOffset": 13125000,
+              "index": 5,
+              "duration": 0.4750000000000001,
+              "endTime": 1.7875,
+              "startTime": 1.3125,
+              "text": "excuse",
+              "textOffset": 137
+            },
+            {
+              "audioOffset": 17875000,
+              "index": 6,
+              "duration": 0.36083333333333334,
+              "endTime": 2.1483333333333334,
+              "startTime": 1.7875,
+              "text": "me",
+              "textOffset": 144
+            }
+          ],
+          "breakAfter": 300,
+          "valid": true
+        },
+        {
+          "duration": 0.9295833333333334,
+          "endTime": 3.4160416666666666,
+          "startTime": 2.486458333333333,
+          "id": "'Lesson 1A'!D49",
+          "prosodyRate": 0.8,
+          "text": "disculpe",
+          "voice": "es-MX-DaliaNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 625000,
+              "index": 0,
+              "duration": 0.9295833333333334,
+              "endTime": 3.4160416666666666,
+              "startTime": 2.486458333333333,
+              "text": "disculpe",
+              "textOffset": 134
+            }
+          ],
+          "breakAfter": 300,
+          "valid": true
+        },
+        {
+          "duration": 1.5649166666666665,
+          "endTime": 5.306583333333333,
+          "startTime": 3.7416666666666667,
+          "id": "'Lesson 1A'!E48",
+          "prosodyRate": 1,
+          "text": "repeat it part by part.",
+          "voice": "en-US-MichelleNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 500000,
+              "index": 0,
+              "duration": 0.38749999999999973,
+              "endTime": 4.129166666666666,
+              "startTime": 3.7416666666666667,
+              "text": "repeat",
+              "textOffset": 117
+            },
+            {
+              "audioOffset": 4375000,
+              "index": 1,
+              "duration": 0.125,
+              "endTime": 4.254166666666666,
+              "startTime": 4.129166666666666,
+              "text": "it",
+              "textOffset": 124
+            },
+            {
+              "audioOffset": 5625000,
+              "index": 2,
+              "duration": 0.27500000000000036,
+              "endTime": 4.529166666666667,
+              "startTime": 4.254166666666666,
+              "text": "part",
+              "textOffset": 127
+            },
+            {
+              "audioOffset": 8375000,
+              "index": 3,
+              "duration": 0.13750000000000018,
+              "endTime": 4.666666666666667,
+              "startTime": 4.529166666666667,
+              "text": "by",
+              "textOffset": 132
+            },
+            {
+              "audioOffset": 9750000,
+              "index": 4,
+              "duration": 0.6399166666666662,
+              "endTime": 5.306583333333333,
+              "startTime": 4.666666666666667,
+              "text": "part",
+              "textOffset": 135
+            }
+          ],
+          "breakAfter": 300,
+          "valid": true
+        },
+        {
+          "duration": 12.974583333333332,
+          "endTime": 18.619291666666665,
+          "startTime": 5.644708333333333,
+          "id": "'Lesson 1A'!E49",
+          "prosodyRate": 0.8,
+          "text": "pe pe kulpe dis dis diskulpe",
+          "voice": "es-MX-DaliaNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 625000,
+              "index": 0,
+              "duration": 2.3625,
+              "endTime": 8.007208333333333,
+              "startTime": 5.644708333333333,
+              "text": "pe",
+              "textOffset": 166
+            },
+            {
+              "audioOffset": 24250000,
+              "index": 1,
+              "duration": 2.28125,
+              "endTime": 10.288458333333333,
+              "startTime": 8.007208333333333,
+              "text": "pe",
+              "textOffset": 233
+            },
+            {
+              "audioOffset": 47062500,
+              "index": 2,
+              "duration": 2.4375,
+              "endTime": 12.725958333333333,
+              "startTime": 10.288458333333333,
+              "text": "kulpe",
+              "textOffset": 303
+            },
+            {
+              "audioOffset": 71437500,
+              "index": 3,
+              "duration": 2.5468750000000018,
+              "endTime": 15.272833333333335,
+              "startTime": 12.725958333333333,
+              "text": "dis",
+              "textOffset": 374
+            },
+            {
+              "audioOffset": 96906250,
+              "index": 4,
+              "duration": 2.546875,
+              "endTime": 17.819708333333335,
+              "startTime": 15.272833333333335,
+              "text": "dis",
+              "textOffset": 443
+            },
+            {
+              "audioOffset": 122375000,
+              "index": 5,
+              "duration": 0.7995833333333309,
+              "endTime": 18.619291666666665,
+              "startTime": 17.819708333333335,
+              "text": "diskulpe",
+              "textOffset": 517
+            }
+          ],
+          "breakAfter": 2000,
+          "syllables": {
+            "word": {
+              "foreign": "disculpe",
+              "native": "excuse me",
+              "ipa": "dis kul pe",
+              "abc": "dis cul pe",
+              "abcData": [
+                {
+                  "start": 0,
+                  "syllable": "dis"
+                },
+                {
+                  "start": 3,
+                  "syllable": "cul"
+                },
+                {
+                  "start": 6,
+                  "syllable": "pe"
+                }
+              ],
+              "ipaData": [
+                {
+                  "start": 0,
+                  "syllable": "dis"
+                },
+                {
+                  "start": 3,
+                  "syllable": "kul"
+                },
+                {
+                  "start": 6,
+                  "syllable": "pe"
+                }
+              ]
+            },
+            "list": [
+              "3",
+              "3",
+              "2-3",
+              "1",
+              "1",
+              "1-3",
+              "",
+              "",
+              ""
+            ],
+            "abcList": [
+              "dis",
+              "cul",
+              "pe"
+            ],
+            "ipaList": [
+              "dis",
+              "kul",
+              "pe"
+            ],
+            "abc": [
+              "pe",
+              "pe",
+              "culpe",
+              "dis",
+              "dis",
+              "disculpe"
+            ],
+            "ipa": [
+              "pe",
+              "pe",
+              "kulpe",
+              "dis",
+              "dis",
+              "diskulpe"
+            ]
+          },
+          "valid": true
+        },
+        {
+          "duration": 1.9023749999999993,
+          "endTime": 22.409166666666668,
+          "startTime": 20.50679166666667,
+          "id": "'Lesson 1A'!F48",
+          "prosodyRate": 1,
+          "text": "How do you say?: excuse me",
+          "voice": "en-US-MichelleNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 500000,
+              "index": 0,
+              "duration": 0.1875,
+              "endTime": 20.69429166666667,
+              "startTime": 20.50679166666667,
+              "text": "How",
+              "textOffset": 117
+            },
+            {
+              "audioOffset": 2375000,
+              "index": 1,
+              "duration": 0.07499999999999929,
+              "endTime": 20.769291666666668,
+              "startTime": 20.69429166666667,
+              "text": "do",
+              "textOffset": 121
+            },
+            {
+              "audioOffset": 3125000,
+              "index": 2,
+              "duration": 0.11250000000000071,
+              "endTime": 20.88179166666667,
+              "startTime": 20.769291666666668,
+              "text": "you",
+              "textOffset": 124
+            },
+            {
+              "audioOffset": 4250000,
+              "index": 3,
+              "duration": 0.6875,
+              "endTime": 21.56929166666667,
+              "startTime": 20.88179166666667,
+              "text": "say",
+              "textOffset": 128
+            },
+            {
+              "audioOffset": 11125000,
+              "index": 4,
+              "duration": 0.47499999999999787,
+              "endTime": 22.044291666666666,
+              "startTime": 21.56929166666667,
+              "text": "excuse",
+              "textOffset": 134
+            },
+            {
+              "audioOffset": 15875000,
+              "index": 5,
+              "duration": 0.3648750000000014,
+              "endTime": 22.409166666666668,
+              "startTime": 22.044291666666666,
+              "text": "me",
+              "textOffset": 141
+            }
+          ],
+          "breakAfter": 300,
+          "valid": true
+        },
+        {
+          "duration": 0.9304999999999986,
+          "endTime": 29.434041666666666,
+          "startTime": 28.503541666666667,
+          "id": "'Lesson 1A'!F49",
+          "prosodyRate": 0.8,
+          "text": "disculpe",
+          "voice": "es-MX-DaliaNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 30625000,
+              "index": 0,
+              "duration": 0.9304999999999986,
+              "endTime": 29.434041666666666,
+              "startTime": 28.503541666666667,
+              "text": "disculpe",
+              "textOffset": 157
+            }
+          ],
+          "repeat": 2,
+          "breakBefore": 3000,
+          "breakAfter": 300,
+          "valid": true
+        },
+        {
+          "duration": 0.9305000000000021,
+          "endTime": 36.45891666666667,
+          "startTime": 35.528416666666665,
+          "id": "'Lesson 1A'!F49",
+          "prosodyRate": 0.8,
+          "text": "disculpe",
+          "voice": "es-MX-DaliaNeural",
+          "wordBoundaries": [
+            {
+              "audioOffset": 30625000,
+              "index": 0,
+              "duration": 0.9305000000000021,
+              "endTime": 36.45891666666667,
+              "startTime": 35.528416666666665,
+              "text": "disculpe",
+              "textOffset": 157
+            }
+          ],
+          "repeat": 1,
+          "breakBefore": 3000,
+          "breakAfter": 300,
+          "valid": true
+        }
+      ],
+      "Native": "disculpe",
+      "Foreign": {
+        "comments": "disculpe",
+        "text": ""
+      }
+    }
+  ]
+}

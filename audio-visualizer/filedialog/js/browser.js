@@ -5,10 +5,6 @@
 import Config, { CourseURL } from '../../config.js';
 
 const ulTreeview = document.getElementById("ulTreeview");
-const fileTableFileName = document.getElementById("fileTableFileName");
-const fileTableDate = document.getElementById("fileTableDate");
-const fileTableFolder = document.getElementById("fileTableFolder");
-const downloadFilePrefix = document.getElementById("downloadFilePrefix");
 const fileBox = document.getElementById("fileBox");
 const downloadButton = document.getElementById("downloadButton");
 const openButton = document.getElementById("openButton");
@@ -28,6 +24,23 @@ let courseMeta, fileSystem, selectedFileDataset, tree;
 openButton.onclick = () => {
     if(!window.CallBackControl) return;
     window.CallBackControl.update(selectedFileDataset);
+}
+
+downloadButton.onclick = () => {
+    const jsonFileName = selectedFileDataset.filename.substring(0, selectedFileDataset.filename.length - 4) + ".json";
+    const jsonFilePath = selectedFileDataset.filepath.substring(0, selectedFileDataset.filepath.length - 4) + ".json";
+    const files = [{
+        zipname: selectedFileDataset.relative_path.replace("/", " - ") + selectedFileDataset.filename,
+        filename: selectedFileDataset.filename,
+        filepath: selectedFileDataset.filepath,
+        relative_path: selectedFileDataset.relative_path,
+    }, {
+        zipname: selectedFileDataset.relative_path.replace("/", " - ") + jsonFileName,
+        filename: selectedFileDataset.filename,
+        filepath: jsonFilePath,
+        relative_path: selectedFileDataset.relative_path,
+    }];
+    downloadFiles(files)
 }
 
 async function init() {
@@ -78,7 +91,8 @@ const fsKeys = {
     filename: 'filename',
     filesize: 'filesize',
     folder: 'folder',
-    relative_path: 'relative_path'
+    relative_path: 'relative_path',
+    filepath: 'filepath'
 }
 
 class ULTreeView {
@@ -124,10 +138,10 @@ class ULTreeView {
     addFileNode(parent, data) {
         parent.insertAdjacentHTML('beforeend',
             `<li><a href="#" data-date="${data.date}" data-filename="${data.filename}" ` +
-            `data-filesize="${data.filesize}" data-relative_path="${data.relative_path}"  data-path="${data.path}" ` +
-            `data-zipName="${data.zipname}" class="file" >${data.filename}</a></li>`);
+            `data-filesize="${data.filesize}" data-relative_path="${data.relative_path}" data-path="${data.path}" ` +
+            `data-filepath="${data.filepath}" data-zipName="${data.zipname}" class="file" >${data.filename}</a></li>`);
     }
-
+    
     addEvents() {
         const toggler = document.getElementsByClassName("folder");
 
@@ -140,6 +154,7 @@ class ULTreeView {
                 createdOnCell.innerText  = selectedFileDataset.date;
                 fileSizeCell.innerText  = selectedFileDataset.filesize;
                 fileBox.value = selectedFileDataset.filename;
+                window.selectedFileDataset = selectedFileDataset;
             }
         })
 
@@ -165,9 +180,9 @@ async function downloadFiles(files) {
         method: "POST",
         body: JSON.stringify(files, null, 2)
     }).then(result => result.text()).then(result => console.log(`COURSEZIP: ${result}`));
-
-    const prefix = downloadFilePrefix.value ? downloadFilePrefix.value + ' ' : '';
-    saveAs(`..${filepath}/${filename}`, `${prefix}${getFormattedTime()}.zip`);
+    console.log(`Config.ARCHIVE_DOWNLOAD_URL`, Config.ARCHIVE_DOWNLOAD_URL)
+    const prefix = relativePathCell.innerText.replace("/", " - ");
+    saveAs(`${Config.ARCHIVE_DOWNLOAD_URL}`, `${prefix}${getFormattedTime()}.zip`);
 }
 
 function getFormattedTime() {

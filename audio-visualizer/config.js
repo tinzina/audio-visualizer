@@ -1,11 +1,8 @@
 const debugMode = true;
 export default {
     debugMode: debugMode,
-    COURSEZIP: debugMode ? 'http://localhost/viewer/coursezip.php' : 'https://dev-scripts.com/viewer/coursezip.php',
-    FILECOPY_PHP: debugMode ? 'http://localhost/viewer/filecopy.php' : 'https://dev-scripts.com/viewer/filecopy.php',
-    FILESAVER_PHP: debugMode ? 'http://localhost/viewer/filesaver.php' : 'https://dev-scripts.com/viewer/filesaver.php',
-    VIEWER_PHP: debugMode ? 'http://localhost/viewer/index.php' : 'https://dev-scripts.com/viewer/index.php',
-    "subfolders": ["staging", "production"]
+    COURSEZIP: debugMode ? 'http://localhost/audio-visualizer/audio-visualizer/filedialog/php/coursezip.php' : 'https://dev-scripts.com/ia/taskpane/lessons-bin/audio-visualizer/filedialog/php/coursezip.php',
+    ARCHIVE_DOWNLOAD_URL: debugMode ? 'http://localhost/audio-visualizer/audio-visualizer/filedialog/php/archives/files.zip' : 'https://dev-scripts.com/ia/taskpane/lessons-bin/audio-visualizer/filedialog/php/archives/files.zip',
 }
 
 export function CourseURL() {

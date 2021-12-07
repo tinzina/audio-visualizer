@@ -92,7 +92,8 @@ class buildTreeFromDirectory
                     'filesize' => $this->fileSizeConvert($filesize) ,
                     'date' => date("d-m-Y H:i", $filemtime) ,
                     'relative_path' => $it->getSubPath(),
-                    'path' => '../files/' . $it->getSubPath() . '/' . $name
+                    'path' => '../files/' . $it->getSubPath() . '/' . $name,
+                    'filepath' => $fileinfo->getRealPath()
                 );
             }
         }
