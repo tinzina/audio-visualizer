@@ -1,0 +1,108 @@
+ul {
+  list-style-type: none;
+}
+
+ul.treeview.file {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+span.folder::before {
+  content: "📁";
+}
+span.active::before {
+  content: "📂";
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.browser {
+  height: 60vh;
+  padding: 5px;
+  overflow: auto;
+}
+.file-queue {
+  height: 80vh;
+  padding: 5px;
+  overflow: auto;
+}
+.fileinfo {
+  grid-area: footer;
+  padding: 5px;
+}
+
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  margin-left: 20px; /* To remove default bottom margin */ 
+  padding: 0; /* To remove default left padding */
+}
+
+ul#ulFileQueue, ul#ulTreeview {
+  margin: 0;
+  margin-left: 5px; /* To remove default bottom margin */ 
+  padding: 0; /* To remove default left padding */
+}
+table#fileInfoTable {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+table#fileInfoTable th {
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  min-width: 150px;
+}
+table#fileInfoTable td {
+  background-color: white;
+  border: 1px solid black;
+  padding: 2px 15px;
+  min-width: 250px;
+}
+span.heading {
+  font-size: 1em;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.grid-FolderList { grid-area: folderList; }
+.grid-FileList { grid-area: fileList; }
+.grid-Controls { grid-area: controls; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'folderList fileList'
+    'controls controls';
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+  height: 95vh;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 5px 5px;
+  font-size: large;
+}
+
+input#fileBox {
+  width: 70vw;
+}

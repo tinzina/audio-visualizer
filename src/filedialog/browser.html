@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:,">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Browser</title>
+  <link rel="stylesheet" href="./css/browser.css">
+  <script src="./js/browser.js" type="module"></script>
+  
+
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-FolderList">
+    <div class="browser">
+      <ul id="ulTreeview"></ul>
+    </div>
+  </div>
+  <div class="grid-FileList">
+    <div class="browser">
+      <table id="fileInfoTable">
+        <tbody>
+          <tr>
+            <th>File Name</th>
+            <td id="fileNameCell"></td>
+          </tr>
+          <tr>
+            <th>Path</th>
+            <td id="relativePathCell"></td>
+          </tr>
+          <tr>
+            <th>Created On</th>
+            <td id="createdOnCell"></td>
+          </tr>   
+          <tr>
+            <th>File Size</th>
+            <td id="fileSizeCell"></td>
+          </tr>                      
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="grid-Controls">
+  <input id="fileBox" type="text"><button id="downloadButton">Download</button><button id="openButton">Open</button>
+  </div>  
+
+</div>
+
+</body>
+</html>
