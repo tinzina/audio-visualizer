@@ -48,7 +48,6 @@ function addVTTCueEventListeners(
             console.log(event.type, word.text, word);
             console.log(`word options`, event.detail);
             console.log(activeCues);
-            player.pause();
         });
 
     if (onSyllableEnter)
